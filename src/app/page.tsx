@@ -58,8 +58,14 @@ export default function Home() {
           <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>  
           </div>
 
-          <div className="w-[100%] h-[600] bg-btn" >
+          <div className="w-[100%] h-[600] bg-btn flex items-center justify-around" >
+              <div>
+                <h1 className='text-5xl font-serif font-extrabold text-white'>Perguntas Frequeentes</h1>
 
+              </div>
+              <div>
+                  <img src='woma.png' alt='zero'  width={898} height={898}/>
+              </div>
           
           </div>
           <Footer/>
