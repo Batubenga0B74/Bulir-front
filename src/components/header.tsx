@@ -1,7 +1,7 @@
 
 export default function Header(){
     return(
-        <header className=" w-full  flex   items-center  justify-around  h-20"> 
+        <header className=" w-full  flex   items-center  justify-around h-20"> 
             <div>
                 <img src='logo.png'
                 alt='logo'

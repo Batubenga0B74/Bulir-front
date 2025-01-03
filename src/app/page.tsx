@@ -1,5 +1,7 @@
 
 import patter from '../../public/hero-pattern.png'
+import Footer from '@/components/footer';
+
 export default function Home() {
   return (
         <div className="bg-white w-full h-full  flex justify-center items-center flex-col gap-10">
@@ -55,6 +57,12 @@ export default function Home() {
           <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
           <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>  
           </div>
+
+          <div className="w-[100%] h-[600] bg-btn" >
+
+          
+          </div>
+          <Footer/>
         </div>
   );
 }
