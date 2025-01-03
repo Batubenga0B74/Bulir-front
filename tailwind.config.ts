@@ -8,7 +8,14 @@ export default {
   ],
   theme: {
     extend: {
+
+      backgroundImage: {
+        'hero-pattern': "url('./public/hero-pattern.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors: {
+        main: "#002A50",
+        btn: "#40A3FB",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

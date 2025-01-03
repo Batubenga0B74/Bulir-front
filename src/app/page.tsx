@@ -1,101 +1,60 @@
-import Image from "next/image";
 
+import patter from '../../public/hero-pattern.png'
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <div className="bg-white w-full h-full  flex justify-center items-center flex-col gap-10">
+          <div className="bg-main w-[1600px] h-[592] rounded-3xl flex items-center flex-col justify-center gap-7  ">
+      
+              <div className="w-[645] h-[144] text-center">
+                  <h1 className="text-4xl font-extrabold text-white">Uma plataforma para voce encontrar prestadores de serviços</h1>
+              </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <div className="w-[790] h-[100] text-center">
+                <p className="text-xl text-white">Saiba os requisitos necessários para contratar um prestador de serviços a partir do seu conforto e segurança   pesquise por  serviços.</p>
+              </div>
+
+              <div className="w-[800] h-[100] items-center justify-center flex">
+                 <button className="bg-btn  w-[200] rounded-3xl h-10 text-center font-bold  text-w">Sou prestador </button>
+              </div>
+          </div>
+          <div className="w-[1400px] h-[628]   flex  items-center justify-around ">
+             <div>
+
+             <img src='about.png'
+                alt='logo'
+                width={500}
+                height={80}
+                />
+             </div>
+
+             <div className="w-[50%] h-[300] flex flex-col gap-20 ">
+                <div className="w-[500] h-[100] gap-9">
+                  <p className="text-main">Saiba mais sobre nós</p>
+                  <p className="">Somos uma plataforma inovadora e interativa, dedicada a facilitar a sua vida na hora de tratar documentos essenciais como Bilhete de Identidade, Cédula Pessoal, Assento de Nascimento, registo criminal e muito mais. Nosso objetivo é fornecer a você os requisitos necessários para tratar qualquer documento pessoal e ainda mostrar onde mais próximo de você podes tratar o mesmo</p>
+                </div>
+
+                <div className="w-[300] h-[190]">
+                    <h1 className=" text-3xl font-extralight font-serif">
+                    Tudo Aqui! 
+                    O primeiro passo 
+                    para seus serviços
+                    está Aqui
+                    </h1>
+                </div>
+             </div>
+
+          </div>
+
+          <div className="w-full h-[130] bg-main flex  items-center justify-center gap-20">
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div> 
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>  
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>  
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
   );
 }
