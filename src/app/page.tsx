@@ -1,11 +1,13 @@
-
+'use-client'
 import patter from '../../public/hero-pattern.png'
 import Footer from '@/components/footer';
+import Header from "@/components/header";
 
 export default function Home() {
   return (
         <div className="bg-white w-full h-full  flex justify-center items-center flex-col gap-10">
-          <div className="bg-main w-[1600px] h-[592] rounded-3xl flex items-center flex-col justify-center gap-7  ">
+            <Header />
+          <div className="bg-main w-[1600px] h-[592] rounded-3xl flex items-center flex-col justify-center gap-7   ">
       
               <div className="w-[645] h-[144] text-center">
                   <h1 className="text-4xl font-extrabold text-white">Uma plataforma para voce encontrar prestadores de serviços</h1>
