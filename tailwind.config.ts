@@ -12,6 +12,7 @@ export default {
   		colors: {
   			main: '#002A50',
   			btn: '#40A3FB',
+			btn2:"#FDB56A",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

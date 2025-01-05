@@ -4,7 +4,7 @@ import Link from "next/link"
 import { FormEvent, useTransition } from "react"
 import { start } from "repl"
 
-interface LoginClientType{
+interface LoginProviderType{
     email: string
     senha: string
 }
@@ -21,12 +21,12 @@ export default function Logando(){
             if(!email || !senha)return alert("preencha todos os campos")
 
             
-            startTransition(()=>authCLientLogin({email,senha})  )
+            startTransition(()=>authproviderLogin({email,senha})  )
         }
 
-        async function authCLientLogin(data: LoginClientType){
+        async function authproviderLogin(data: LoginProviderType){
             try {
-                const response = await api.get(`/clients/login/${data.email}/${data.senha}`)
+                const response = await api.get(`/providers/login/${data.email}/${data.senha}`)
                 if(response.data.message === "Usuario nao encontrado") return alert("Usuário nao encontrado")
                 
                 // ARMAZENAR DADOS DO USUARIO NO LOCALSTORAGE
@@ -44,13 +44,13 @@ export default function Logando(){
 
     return(
         <div className=" w-full  bg-slate-50 h-screen flex items-center justify-center">
-            <div className="w-[640] h-[832] "> 
-                <img src="reta.png" width={640} height={837} alt="error"/>
+            <div className="w-[640] h-[832]  overflow-hidden"> 
+                <img src="reta2.jpg" width={600} height={237} alt="error"/>
             </div>
             <form   className="w-[640] h-[832] bg-white " onSubmit={ValidarFormLogin}>
                     <div className="w-full h-48  items-center flex flex-col justify-center gap-10">
                         <img src="logo.png" width={80} height={80} alt="erro"/>
-                        <div> <h1 className="text-xl font-extralight">Login do  Cliente</h1></div>
+                        <div> <h1 className="text-xl font-extralight">Login do  provedor</h1></div>
                     </div>
                     <div className="h-[640] w-full flex flex-col items-center justify-center gap-14">
                         <div className="w-[560] h-28 flex  flex-col gap-2 ">
@@ -65,14 +65,15 @@ export default function Logando(){
                         
                         <div className="w-[560] h-20  flex  flex-col  ">
                             <button  
-                                className={`w-[560] h-[70] rounded-xl text-white transition-colors font-bold ${isPending?"bg-btn/50":"bg-btn"}`}
+                                className={`w-[560] h-[70] rounded-xl text-white transition-colors font-bold ${isPending?"bg-btn/50":"bg-btn2"}`}
                                 disabled={isPending}
                             >
                                 {isPending? "Carregando": "Enviar"}
                             </button>
                         </div>
                         <div className="w-[560] h-20  flex  flex-col text-center  ">
-                            <Link href='/providerlog' className="text-btn">Eu sou um prestador de serviços</Link>
+                        
+                            
                         </div>
                     </div>
             </form>

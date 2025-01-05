@@ -1,7 +1,7 @@
 export  default function Footer(){
     return(
         <div className="w-[100%] h-[300] bg-main flex items-center justify-around">
-            <div> <img src="logo2.png" alt="logo" width={100} height={100}/></div>
+            <div> <img src="logo.png" alt="logo" width={200} height={200}/></div>
             <div>
                 <p className="font-bold text-white text-xl "> Conteudo</p>
                 <p className=" text-slate-400"> inicio</p>

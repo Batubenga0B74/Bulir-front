@@ -2,6 +2,7 @@
 import patter from '../../public/hero-pattern.png'
 import Footer from '@/components/footer';
 import Header from "@/components/header";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
               </div>
 
               <div className="w-[800] h-[100] items-center justify-center flex">
-                 <button className="bg-btn  w-[200] rounded-3xl h-10 text-center font-bold  text-w">Sou prestador </button>
+                <Link href='/prestador'>
+                <button className="bg-btn  w-[200] rounded-3xl h-10 text-center font-bold  text-w">Sou prestador </button>
+                </Link>
+                
               </div>
           </div>
           <div className="w-[1400px] h-[628]   flex  items-center justify-around ">
@@ -34,12 +38,12 @@ export default function Home() {
              <div className="w-[50%] h-[300] flex flex-col gap-20 ">
                 <div className="w-[500] h-[100] gap-9">
                   <p className="text-main">Saiba mais sobre nós</p>
-                  <p className="">Somos uma plataforma inovadora e interativa, dedicada a facilitar a sua vida na hora de tratar documentos essenciais como Bilhete de Identidade, Cédula Pessoal, Assento de Nascimento, registo criminal e muito mais. Nosso objetivo é fornecer a você os requisitos necessários para tratar qualquer documento pessoal e ainda mostrar onde mais próximo de você podes tratar o mesmo</p>
+                  <p className="">Somos uma plataforma inovadora e interativa, dedicada a facilitar a sua vida na hora de tratar documentos essenciais c, Cédula Pessoal, Assento de Nascimento, registo criminal e muito mais. Nosso objetivo é fornecer a você os requisitos necessários para tratar qualquer documento pessoal e ainda mostrar onde mais próximo de você podes tratar o mesmo</p>
                 </div>
 
                 <div className="w-[300] h-[190]">
                     <h1 className=" text-3xl font-extralight font-serif">
-                    Tudo Aqui! 
+                    service L!nk! 
                     O primeiro passo 
                     para seus serviços
                     está Aqui
@@ -50,23 +54,23 @@ export default function Home() {
           </div>
 
           <div className="w-full h-[130] bg-main flex  items-center justify-center gap-20">
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div> 
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>  
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>
-          <div> <img src='logo2.png'alt='logo2' width={124}height={74}/></div>  
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div> 
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>  
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>
+          <div> <img src='logo.png'alt='logo2' width={124}height={74}/></div>  
           </div>
 
-          <div className="w-[100%] h-[600] bg-btn flex items-center justify-around" >
+          <div className="w-[100%] h-[600] flex items-center justify-around" >
               <div>
-                <h1 className='text-5xl font-serif font-extrabold text-white'>Perguntas Frequeentes</h1>
+                <video src="/Mackbook.webm" width={780} height={400} autoPlay loop></video>
 
               </div>
               <div>
-                  <img src='woma.png' alt='zero'  width={898} height={898}/>
+                  <img src='woma.png' alt='zero'  width={1000} height={898}/>
               </div>
           
           </div>
