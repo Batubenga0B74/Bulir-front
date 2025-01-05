@@ -36,7 +36,7 @@ export default function Logando(){
                 // const getItemFromLocalsorage = JSON.parse(localStorage.getItem("clientData") || "")
                 // console.log(getItemFromLocalsorage)
 
-                window.location.href = "/service"
+                window.location.href = "/Providerdash"
             } catch (error) {
                 alert("Impossivel logar, tente mais tarde")
             }
