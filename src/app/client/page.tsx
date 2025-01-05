@@ -47,7 +47,7 @@ export default function Logando(){
         <div className=" w-full  bg-slate-50 h-screen flex items-center justify-center  flex-col">
             <div className="w-full h-[300]  items-center flex flex-col justify-center gap-10">
                         <img src="logo.png" width={80} height={80} alt="erro"/>
-                        <div> <h1 className="text-xl font-extralight">Bem-vindo de Volta</h1></div>
+                        <div> <h1 className="text-xl font-extralight">Cadastro do cliente</h1></div>
                     </div>
             <form   className="w-[1280] h-[842] bg-white  p-3" onSubmit={validateClientData}>
                     <div  className="w-[1280] h-[570]  flex  ">

@@ -2,7 +2,6 @@
 import { api } from "@/service/api"
 import Link from "next/link"
 import { FormEvent, useTransition } from "react"
-import { start } from "repl"
 
 interface LoginClientType{
     email: string
@@ -33,8 +32,8 @@ export default function Logando(){
                 window.localStorage.setItem("clientData", JSON.stringify(response.data))
 
                 // EXEMPLO DE COMO PEGAR DADOS NO LOCALSTORAGE
-                // const getItemFromLocalsorage = JSON.parse(localStorage.getItem("clientData") || "")
-                // console.log(getItemFromLocalsorage)
+                // const getItemFromLocalsorage = await JSON.parse(localStorage.getItem("clientData") || "")
+                
 
                 window.location.href = "/service"
             } catch (error) {
