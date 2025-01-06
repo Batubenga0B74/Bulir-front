@@ -71,7 +71,7 @@ export default function Logando(){
                             </button>
                         </div>
                         <div className="w-[560] h-20  flex  flex-col text-center  ">
-                            <Link href='/providerlog' className="text-btn">Eu sou um prestador de serviços</Link>
+                            <Link href='/providerlog' className="text-btn">Login do prestador</Link>
                         </div>
                     </div>
             </form>

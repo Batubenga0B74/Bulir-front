@@ -2,7 +2,6 @@
 import { api } from "@/service/api"
 import Link from "next/link"
 import { FormEvent, useTransition } from "react"
-import { start } from "repl"
 
 interface LoginProviderType{
     email: string

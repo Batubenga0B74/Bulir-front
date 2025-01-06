@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+1.clona o repositório 
+2. instale as dependencia com *NPM I*  ou *NPM install*
+3. rodar o projecto  *npm run dev*
 
 First, run the development server:
 
