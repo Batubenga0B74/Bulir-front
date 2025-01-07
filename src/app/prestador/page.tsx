@@ -32,7 +32,7 @@ export default function Logando(){
         if(!regex.test(nome)) return alert("Insira um nome valido")
         
         const precoFormat = preco.replace(/\D/g,"")
-        console.log(precoFormat)
+        
 
         const providersData: ProviderType = {
             descricao, email, nif, nome, preco, senha, service_name:servico
